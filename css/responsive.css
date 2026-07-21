@@ -1,0 +1,370 @@
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+/* Large tablets and small desktops */
+@media (max-width: 1024px) {
+    .article-container {
+        max-width: 95%;
+        padding: 40px 20px;
+    }
+
+    .city-corporation-card,
+    .attraction-card,
+    .attraction-card.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .attraction-card.reverse .attraction-image {
+        order: 0;
+    }
+
+    .attraction-image {
+        min-height: 250px;
+    }
+
+    .city-content {
+        padding: 28px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .main-nav {
+        padding: 0 20px;
+        height: 60px;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: var(--bg-secondary);
+        flex-direction: column;
+        padding: 20px;
+        gap: 4px;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-link {
+        padding: 12px 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero {
+        padding: 80px 16px 40px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+
+    .article-container {
+        padding: 30px 16px;
+    }
+
+    .content-section {
+        margin-bottom: 50px;
+    }
+
+    .intro-card,
+    .museum-content,
+    .city-content,
+    .attraction-content,
+    .silk-section,
+    .culture-card,
+    .rivers-section,
+    .closing-statement {
+        padding: 24px;
+    }
+
+    .admin-grid,
+    .geo-features,
+    .product-grid,
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .collection-grid,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .city-stats {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .tab-buttons {
+        padding: 0 8px;
+    }
+
+    .tab-btn {
+        padding: 12px 14px;
+        font-size: 0.85rem;
+    }
+
+    .tab-btn span {
+        display: none;
+    }
+
+    .tab-btn i {
+        font-size: 1.2rem;
+    }
+
+    .upazila-menu {
+        top: 75px;
+        right: 16px;
+    }
+
+    .upazila-list {
+        width: 260px;
+    }
+
+    .map-badge {
+        top: 30px;
+        right: 30px;
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .museum-image-overlay {
+        padding: 8px 14px;
+    }
+
+    .museum-year {
+        font-size: 1.4rem;
+    }
+
+    .attraction-rating {
+        padding: 5px 10px;
+        font-size: 0.85rem;
+    }
+
+    .footer-brand {
+        font-size: 1.3rem;
+    }
+
+    .back-to-top {
+        width: 44px;
+        height: 44px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .main-nav {
+        padding: 0 16px;
+    }
+
+    .nav-brand span {
+        font-size: 1.1rem;
+    }
+
+    .nav-brand i {
+        font-size: 1.3rem;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-author {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-author-info {
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .paragraph {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .admin-grid,
+    .geo-features,
+    .product-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card .stat-value {
+        font-size: 1.6rem;
+    }
+
+    .attraction-image {
+        min-height: 200px;
+    }
+
+    .attraction-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .detail-item,
+    .highlight-item {
+        font-size: 0.9rem;
+    }
+
+    .institution-item {
+        padding: 12px 14px;
+    }
+
+    .institution-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 0.9rem;
+    }
+
+    .institution-info h4 {
+        font-size: 0.95rem;
+    }
+
+    .institution-info p {
+        font-size: 0.85rem;
+    }
+
+    .upazila-list {
+        width: 240px;
+    }
+
+    .upazila-link {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
+
+    .main-footer {
+        padding: 40px 16px 30px;
+    }
+
+    .footer-social a {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .search-container {
+        width: 95%;
+    }
+
+    .search-container input {
+        padding: 16px 50px 16px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Small mobile phones */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+
+    .stat-card {
+        padding: 24px 16px;
+    }
+
+    .stat-card .stat-value {
+        font-size: 1.4rem;
+    }
+
+    .city-content {
+        padding: 20px;
+    }
+
+    .attraction-content {
+        padding: 20px;
+    }
+}
+
+/* Landscape mode on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 80px 20px 40px;
+    }
+
+    .hero-scroll {
+        display: none;
+    }
+
+    .nav-links {
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+}
+
+/* High resolution screens */
+@media (min-width: 1400px) {
+    .article-container {
+        max-width: 1000px;
+    }
+
+    .hero-title {
+        font-size: 5rem;
+    }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .loader {
+        display: none !important;
+    }
+}
