@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the beauty and heritage of Rajshahi, Bangladesh - The Silk City and Education Hub of North Bengal.">
+    <meta name="keywords" content="Rajshahi, Bangladesh, tourism, geography, education, silk city, mango capital">
+    <meta name="author" content="Sobuj Rahman">
+    <meta name="theme-color" content="#0b3d2e">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Rajshahi District - The Heart of North Bengal">
+    <meta property="og:description" content="Explore the rich culture, history, and attractions of Rajshahi District.">
+    <meta property="og:image" content="https://i.postimg.cc/LXVpSpdK/1764781022744-2.jpg">
+    <meta property="og:url" content="https://sbrzone.github.io/rajshahi/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rajshahi District - The Heart of North Bengal">
+    <meta name="twitter:description" content="Explore the rich culture, history, and attractions of Rajshahi District.">
+    <meta name="twitter:image" content="https://i.postimg.cc/LXVpSpdK/1764781022744-2.jpg">
+
+    <title>Rajshahi District - The Heart of North Bengal</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>রাজশাহী জেলা লোড হচ্ছে...</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ===============================
+      Navigation
+    ================================ -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-brand">
+            <i class="fas fa-landmark"></i>
+            <span>রাজশাহী</span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="nav-link active">হোম</a>
+            <a href="#geography" class="nav-link">ভৌগোলিক</a>
+            <a href="#administration" class="nav-link">প্রশাসন</a>
+            <a href="#economy" class="nav-link">অর্থনীতি</a>
+            <a href="#education" class="nav-link">শিক্ষা</a>
+            <a href="#tourism" class="nav-link">পর্যটন</a>
+            <a href="#statistics" class="nav-link">পরিসংখ্যান</a>
+            <a href="#contact" class="nav-link">যোগাযোগ</a>
+        </div>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="search-toggle" id="searchToggle" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+            <button class="hamburger" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="খুঁজুন..." autocomplete="off">
+            <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- ===============================
+      Upazila Hamburger Menu
+    ================================ -->
+    <div class="upazila-menu">
+        <div class="hamburger" id="upazilaToggle" aria-label="Upazila menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="upazila-list" id="upazilaList">
+            <div class="upazila-header">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>উপজেলাসমূহ</span>
+            </div>
+            <ul>
+                <li><a href="https://sbrzone.github.io/bagmara/" target="_blank" class="upazila-link"><i class="fas fa-external-link-alt"></i> Bagmara</a></li>
+                <li><a href="https://sbrzone.github.io/godagari/" target="_blank" class="upazila-link"><i class="fas fa-external-link-alt"></i> Godagari</a></li>
+                <li><a href="https://sbrzone.github.io/tanore/" target="_blank" class="upazila-link"><i class="fas fa-external-link-alt"></i> Tanore</a></li>
+                <li><a href="https://sbrzone.github.io/mohanpur/" target="_blank" class="upazila-link"><i class="fas fa-external-link-alt"></i> Mohanpur</a></li>
+                <li><a href="https://sbrzone.github.io/paba/" target="_blank" class="upazila-link"><i class="fas fa-external-link-alt"></i> Paba</a></li>
+                <li><a href="https://sbrzone.github.io/durgapur/" target="_blank" class="upazila-link"><i class="fas fa-external-link-alt"></i> Durgapur</a></li>
+                <li><a href="https://sbrzone.github.io/puthia/" target="_blank" class="upazila-link"><i class="fas fa-external-link-alt"></i> Puthia</a></li>
+                <li><a href="https://sbrzone.github.io/charghat/" target="_blank" class="upazila-link"><i class="fas fa-external-link-alt"></i> Charghat</a></li>
+                <li><a href="https://sbrzone.github.io/bagha/" target="_blank" class="upazila-link"><i class="fas fa-external-link-alt"></i> Bagha</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ===============================
+      Hero Section
+    ================================ -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">
+                <i class="fas fa-star"></i>
+                <span>বাংলাদেশের উত্তর-পশ্চিমাঞ্চল</span>
+            </div>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                রাজশাহী জেলা
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                রেশমের নগরী · আমের রাজধানী · শিক্ষার কেন্দ্র
+            </p>
+            <div class="hero-author" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://i.postimg.cc/LXVpSpdK/1764781022744-2.jpg" alt="Sobuj Rahman" class="hero-avatar">
+                <div class="hero-author-info">
+                    <span class="hero-author-name">SOBUJ RAHMAN</span>
+                    <span class="hero-author-role">Content Creator</span>
+                </div>
+            </div>
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                <a href="#geography" class="btn btn-primary">
+                    <span>অন্বেষণ করুন</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+                <a href="#statistics" class="btn btn-outline">
+                    <span>পরিসংখ্যান</span>
+                    <i class="fas fa-chart-bar"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>স্ক্রল করুন</span>
+        </div>
+    </section>
+
+    <!-- ===============================
+      Main Article
+    ================================ -->
+    <main class="article-container">
+
+        <!-- Introduction -->
+        <section class="content-section" id="intro">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">পরিচিতি</span>
+                <h2 class="section-title">রাজশাহীর গৌরবময় ইতিহাস</h2>
+            </div>
+            <div class="intro-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="intro-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <p class="paragraph">
+                    রাজশাহী জেলা বাংলাদেশের উত্তর-পশ্চিমাঞ্চলের একটি অন্যতম প্রধান ও প্রাচীন জেলা।
+                    এটি <span class="en">Padma River</span>-এর তীরে অবস্থিত এবং রেশম ও আম উৎপাদনের জন্য
+                    সারা দেশ এমনকি বিশ্বজুড়ে পরিচিত।
+                    <span class="en">Rajshahi District</span> শুধু একটা প্রশাসনিক অঞ্চল নয়,
+                    বরং এটি উত্তরবঙ্গের সাংস্কৃতিক ও বুদ্ধিবৃত্তিক কেন্দ্র।
+                </p>
+            </div>
+        </section>
+
+        <!-- ===============================
+          ভৌগোলিক অবস্থান (Map)
+        ================================ -->
+        <section class="content-section" id="geography">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">ভূগোল</span>
+                <h2 class="section-title">ভৌগোলিক অবস্থান</h2>
+                <p class="section-desc">Geographical Location</p>
+            </div>
+
+            <div class="map-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="map-frame">
+                    <img src="https://i.postimg.cc/qBjNXftd/e57350b7fb5c0e51d1456c33dd68402f.gif" alt="Rajshahi District Map" class="district-map" loading="lazy">
+                    <div class="map-badge">
+                        <i class="fas fa-map"></i>
+                        <span>৯টি উপজেলা</span>
+                    </div>
+                </div>
+                <div class="map-caption">
+                    <i class="fas fa-info-circle"></i>
+                    <span>রাজশাহী জেলার প্রশাসনিক মানচিত্র। বর্তমানে ৯টি উপজেলা নিয়ে গঠিত।</span>
+                </div>
+            </div>
+
+            <div class="geo-features" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon" style="--icon-color: #3498db;">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>পদ্মা নদী</h3>
+                    <p>পলিবাহিত সমতল ভূমি</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="--icon-color: #e67e22;">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>বরেন্দ্র ট্র্যাক্ট</h3>
+                    <p>শুষ্ক উচ্চভূমি অঞ্চল</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="--icon-color: #27ae60;">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>কৃষি সমৃদ্ধ</h3>
+                    <p>উর্বর কৃষি জমি</p>
+                </div>
+            </div>
+
+            <p class="paragraph" data-aos="fade-up">
+                আমরা জানি <span class="en">Bangladesh</span> একটা নদীমাতৃক দেশ,
+                কিন্তু রাজশাহীর ভৌগোলিক বাস্তবতা অন্য অনেক জেলার চেয়ে আলাদা।
+                পদ্মার পলিবাহিত সমতল ভূমি এবং শুষ্ক <span class="en">Barind Tract</span>
+                এই জেলার প্রকৃতি, কৃষি ও মানুষের জীবনযাপনকে গভীরভাবে প্রভাবিত করেছে।
+            </p>
+        </section>
+
+        <!-- ===============================
+          Administrative Structure
+        ================================ -->
+        <section class="content-section" id="administration">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">প্রশাসন</span>
+                <h2 class="section-title">প্রশাসনিক কাঠামো</h2>
+                <p class="section-desc">Administrative Structure</p>
+            </div>
+
+            <p class="paragraph" data-aos="fade-up">
+                রাজশাহী জেলার প্রশাসনিক ব্যবস্থা অত্যন্ত সুসংগঠিত এবং কার্যকর।
+                বর্তমান প্রশাসনিক কাঠামো অনুযায়ী জেলার প্রধান ইউনিটগুলো হলো:
+            </p>
+
+            <div class="admin-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="admin-card">
+                    <div class="admin-icon">
+                        <i class="fas fa-building"></i>
+                        <span class="admin-count">৯</span>
+                    </div>
+                    <h3>উপজেলা</h3>
+                    <p>বাগমারা, গোদাগাড়ী, তানোর, মোহনপুর, পবা, দুর্গাপুর, পুঠিয়া, চারঘাট, বাঘা</p>
+                </div>
+                <div class="admin-card">
+                    <div class="admin-icon">
+                        <i class="fas fa-shield-alt"></i>
+                        <span class="admin-count">২১</span>
+                    </div>
+                    <h3>থানা</h3>
+                    <p>উপজেলা ভিত্তিক থানার পাশাপাশি শহর এলাকায় আলাদা প্রশাসনিক থানা</p>
+                </div>
+                <div class="admin-card">
+                    <div class="admin-icon">
+                        <i class="fas fa-city"></i>
+                        <span class="admin-count">১৪</span>
+                    </div>
+                    <h3>পৌরসভা</h3>
+                    <p>স্থানীয় সরকার ব্যবস্থার গুরুত্বপূর্ণ অংশ</p>
+                </div>
+                <div class="admin-card">
+                    <div class="admin-icon">
+                        <i class="fas fa-users"></i>
+                        <span class="admin-count">৭২</span>
+                    </div>
+                    <h3>ইউনিয়ন পরিষদ</h3>
+                    <p>গ্রামীণ প্রশাসনের জন্য মোট ৭২টি ইউনিয়ন</p>
+                </div>
+            </div>
+
+            <div class="city-corporation-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="city-image">
+                    <img src="https://i.postimg.cc/63KM55T6/Nagar-Bhaban.jpg" alt="রাজশাহী সিটি কর্পোরেশন - নগর ভবন" loading="lazy">
+                    <div class="image-caption">রাজশাহী সিটি কর্পোরেশন - নগর ভবন</div>
+                </div>
+                <div class="city-content">
+                    <div class="city-badge">
+                        <i class="fas fa-landmark"></i>
+                        <span>সিটি কর্পোরেশন</span>
+                    </div>
+                    <h3>Rajshahi City Corporation</h3>
+                    <p class="paragraph">
+                        শহর এলাকার জন্য রয়েছে <span class="en">Rajshahi City Corporation</span>,
+                        যা রাজশাহীকে একটা আধুনিক ও পরিচ্ছন্ন নগরীতে রূপ দিতে গুরুত্বপূর্ণ ভূমিকা রাখছে।
+                        রাজশাহী বাংলাদেশের অন্যতম পরিচ্ছন্ন ও সবুজ নগরী হিসেবে পরিচিত।
+                    </p>
+                    <div class="city-stats">
+                        <div class="city-stat">
+                            <span class="stat-value">২০০০+</span>
+                            <span class="stat-label">কি.মি. রাস্তা</span>
+                        </div>
+                        <div class="city-stat">
+                            <span class="stat-value">৯৫%</span>
+                            <span class="stat-label">পরিচ্ছন্নতা</span>
+                        </div>
+                        <div class="city-stat">
+                            <span class="stat-value">১০০%</span>
+                            <span class="stat-label">বিদ্যুৎ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================
+          Economy & Agriculture
+        ================================ -->
+        <section class="content-section" id="economy">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">অর্থনীতি</span>
+                <h2 class="section-title">অর্থনীতি ও কৃষি</h2>
+                <p class="section-desc">Economy & Agriculture</p>
+            </div>
+
+            <div class="economy-hero" data-aos="fade-up">
+                <div class="economy-badge">
+                    <i class="fas fa-crown"></i>
+                    <span>ফলের রাজধানী</span>
+                </div>
+                <p class="paragraph">
+                    রাজশাহীর অর্থনীতি মূলত কৃষিনির্ভর হলেও এর বাণিজ্যিক গুরুত্ব অত্যন্ত বেশি।
+                    এই জেলাকে বাংলাদেশের <span class="highlight-text">ফলের রাজধানী</span> বলা হয়।
+                </p>
+            </div>
+
+            <div class="product-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="product-card mango">
+                    <div class="product-image">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>আম</h3>
+                        <p>বিশ্ববিখ্যাত রাজশাহীর আম</p>
+                        <div class="product-tags">
+                            <span class="tag">রপ্তানি</span>
+                            <span class="tag">গুণমান</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card silk">
+                    <div class="product-image">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>রেশম</h3>
+                        <p>Silk City খ্যাত রেশম</p>
+                        <div class="product-tags">
+                            <span class="tag">ঐতিহ্য</span>
+                            <span class="tag">শিল্প</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card lychee">
+                    <div class="product-image">
+                        <i class="fas fa-lemon"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>লিচু</h3>
+                        <p>দেশের সেরা লিচু</p>
+                        <div class="product-tags">
+                            <span class="tag">বিদেশী বাজার</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card potato">
+                    <div class="product-image">
+                        <i class="fas fa-carrot"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>আলু ও আখ</h3>
+                        <p>উল্লেখযোগ্য অর্থকরী ফসল</p>
+                        <div class="product-tags">
+                            <span class="tag">বাণিজ্যিক</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="silk-section" data-aos="fade-up" data-aos-delay="200">
+                <div class="silk-content">
+                    <div class="silk-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>রেশম শিল্প</h3>
+                    <p class="paragraph">
+                        রেশম শিল্প রাজশাহীর আরেকটি ঐতিহ্যবাহী পরিচয়।
+                        উন্নতমানের <span class="en">Silk</span> উৎপাদনের কারণে
+                        রাজশাহীকে <span class="highlight-text">Silk City</span> বলা হয়।
+                        যদিও শিল্পটি আগের মতো সক্রিয় নয়, তবুও এটি জেলার ঐতিহাসিক পরিচয়ের অংশ।
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================
+          Education & Culture
+        ================================ -->
+        <section class="content-section" id="education">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">শিক্ষা</span>
+                <h2 class="section-title">শিক্ষা ও সংস্কৃতি</h2>
+                <p class="section-desc">Education & Culture</p>
+            </div>
+
+            <div class="edu-hero" data-aos="fade-up">
+                <div class="edu-badge">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>শিক্ষা নগরী</span>
+                </div>
+                <p class="paragraph">
+                    রাজশাহীকে বাংলাদেশের <span class="highlight-text">শিক্ষা নগরী</span> হিসেবে গণ্য করা হয়।
+                    এখানে রয়েছে দেশের অন্যতম প্রধান শিক্ষাপ্রতিষ্ঠানসমূহ।
+                </p>
+            </div>
+
+            <div class="institution-tabs" data-aos="fade-up" data-aos-delay="100">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="university">
+                        <i class="fas fa-university"></i>
+                        <span>বিশ্ববিদ্যালয়</span>
+                    </button>
+                    <button class="tab-btn" data-tab="medical">
+                        <i class="fas fa-hospital"></i>
+                        <span>চিকিৎসা</span>
+                    </button>
+                    <button class="tab-btn" data-tab="college">
+                        <i class="fas fa-school"></i>
+                        <span>কলেজ</span>
+                    </button>
+                    <button class="tab-btn" data-tab="special">
+                        <i class="fas fa-star"></i>
+                        <span>বিশেষায়িত</span>
+                    </button>
+                </div>
+
+                <div class="tab-content active" id="university">
+                    <div class="institution-list">
+                        <div class="institution-item">
+                            <div class="institution-icon"><i class="fas fa-university"></i></div>
+                            <div class="institution-info">
+                                <h4>রাজশাহী বিশ্ববিদ্যালয় (RU)</h4>
+                                <p>১৯৫৩ সালে প্রতিষ্ঠিত, বাংলাদেশের দ্বিতীয় বৃহত্তম বিশ্ববিদ্যালয়</p>
+                            </div>
+                        </div>
+                        <div class="institution-item">
+                            <div class="institution-icon"><i class="fas fa-cogs"></i></div>
+                            <div class="institution-info">
+                                <h4>রাজশাহী প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় (RUET)</h4>
+                                <p>দেশের অন্যতম প্রধান প্রকৌশল বিশ্ববিদ্যালয়</p>
+                            </div>
+                        </div>
+                        <div class="institution-item">
+                            <div class="institution-icon"><i class="fas fa-user-md"></i></div>
+                            <div class="institution-info">
+                                <h4>রাজশাহী মেডিকেল বিশ্ববিদ্যালয় (RMU)</h4>
+                                <p>উত্তরবঙ্গের প্রধান মেডিকেল বিশ্ববিদ্যালয়</p>
+                            </div>
+                        </div>
+                        <div class="institution-item">
+                            <div class="institution-icon"><i class="fas fa-building"></i></div>
+                            <div class="institution-info">
+                                <h4>বরেন্দ্র বিশ্ববিদ্যালয় (বেসরকারি)</h4>
+                                <p>বেসরকারি উচ্চশিক্ষা প্রতিষ্ঠান</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="medical">
+                    <div class="institution-list">
+                        <div class="institution-item">
+                            <div class="institution-icon"><i class="fas fa-hospital-alt"></i></div>
+                            <div class="institution-info">
+                                <h4>রাজশাহী মেডিকেল কলেজ (RMC)</h4>
+                                <p>১৯৫৮ সালে প্রতিষ্ঠিত, দেশের প্রাচীনতম মেডিকেল কলেজগুলোর একট</p>
+                            </div>
+                        </div>
+                        <div class="institution-item">
+                            <div class="institution-icon"><i class="fas fa-flask"></i></div>
+                            <div class="institution-info">
+                                <h4>ইনস্টিটিউট অব হেলথ টেকনোলজি (IHT)</h4>
+                                <p>স্বাস্থ্য প্রযুক্তি শিক্ষা প্রতিষ্ঠান</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="college">
+                    <div class="institution-list">
+                        <div class="institution-item">
+                            <div class="institution-icon"><i class="fas fa-landmark"></i></div>
+                            <div class="institution-info">
+                                <h4>রাজশাহী কলেজ</h4>
+                                <p>১৮৭৩ সালে প্রতিষ্ঠিত, দেশের প্রাচীনতম ও ঐতিহ্যবাহী কলেজ</p>
+                            </div>
+                        </div>
+                        <div class="institution-item">
+                            <div class="institution-icon"><i class="fas fa-school"></i></div>
+                            <div class="institution-info">
+                                <h4>নিউ গভঃ ডিগ্রী কলেজ</h4>
+                                <p>সরকারি উচ্চমাধ্যমিক ও স্নাতক কলেজ</p>
+                            </div>
+                        </div>
+                        <div class="institution-item">
+                            <div class="institution-icon"><i class="fas fa-female"></i></div>
+                            <div class="institution-info">
+                                <h4>রাজশাহী সরকারি মহিলা কলেজ</h4>
+                                <p>নারী শিক্ষার অন্যতম প্রধান কেন্দ্র</p>
+                            </div>
+                        </div>
+                        <div class="institution-item">
+                            <div class="institution-icon"><i class="fas fa-city"></i></div>
+                            <div class="institution-info">
+                                <h4>রাজশাহী সরকারি সিটি কলেজ</h4>
+                                <p>শহরের প্রাণকেন্দ্রে অবস্থিত সরকারি কলেজ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="special">
+                    <div class="institution-list">
+                        <div class="institution-item">
+                            <div class="institution-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="institution-info">
+                                <h4>রাজশাহী কলেজিয়েট স্কুল</h4>
+                                <p>১৮২৮ সালে প্রতিষ্ঠিত, দেশের অন্যতম প্রাচীন শিক্ষাপ্রতিষ্ঠান</p>
+                            </div>
+                        </div>
+                        <div class="institution-item">
+                            <div class="institution-icon"><i class="fas fa-flag"></i></div>
+                            <div class="institution-info">
+                                <h4>রাজশাহী ক্যাডেট কলেজ</h4>
+                                <p>সামরিক শিক্ষার অন্যতম প্রধান প্রতিষ্ঠান</p>
+                            </div>
+                        </div>
+                        <div class="institution-item">
+                            <div class="institution-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="institution-info">
+                                <h4>বাংলাদেশ পুলিশ একাডেমি (সারদা)</h4>
+                                <p>পুলিশ বাহিনীর প্রশিক্ষণ একাডেমি</p>
+                            </div>
+                        </div>
+                        <div class="institution-item">
+                            <div class="institution-icon"><i class="fas fa-spider"></i></div>
+                            <div class="institution-info">
+                                <h4>বাংলাদেশ রেশম গবেষণা ও প্রশিক্ষণ ইনস্টিটিউট</h4>
+                                <p>রেশম শিল্পের গবেষণা ও উন্নয়ন কেন্দ্র</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culture-section" data-aos="fade-up" data-aos-delay="200">
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>সংস্কৃতি</h3>
+                    <p class="paragraph">
+                        সংস্কৃতির দিক থেকেও রাজশাহী সমৃদ্ধ।
+                        গম্ভীরার গান ও নাচ এই অঞ্চলের নিজস্ব লোকজ ঐতিহ্য,
+                        যা গ্রামীণ সমাজের আনন্দ-বেদনা ও সামাজিক বাস্তবতা তুলে ধরে।
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================
+          Varendra Museum
+        ================================ -->
+        <section class="content-section" id="museum">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">জাদুঘর</span>
+                <h2 class="section-title">বরেন্দ্র গবেষণা জাদুঘর</h2>
+                <p class="section-desc">Varendra Research Museum</p>
+            </div>
+
+            <div class="museum-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="museum-image">
+                    <img src="https://i.postimg.cc/Qd70rWS9/FB-IMG-1768455345776.jpg" alt="বরেন্দ্র গবেষণা জাদুঘর" loading="lazy">
+                    <div class="museum-image-overlay">
+                        <span class="museum-year">১৯১০</span>
+                        <span class="museum-label">প্রতিষ্ঠিত</span>
+                    </div>
+                </div>
+                <div class="museum-content">
+                    <div class="collections">
+                        <h3><i class="fas fa-gem"></i> উল্লেখযোগ্য সংগ্রহসমূহ</h3>
+                        <div class="collection-grid">
+                            <div class="collection-item">
+                                <div class="collection-icon"><i class="fas fa-monument"></i></div>
+                                <h4>ভাস্কর্য</h4>
+                                <p>পাল ও সেন আমলের কালো পাথরের ভাস্কর্য — সূর্য, শিব, বিষ্ণু, দুর্গা ও বুদ্ধ</p>
+                            </div>
+                            <div class="collection-item">
+                                <div class="collection-icon"><i class="fas fa-fire"></i></div>
+                                <h4>টেরাকোটা ও মৃৎশিল্প</h4>
+                                <p>অষ্টম থেকে দ্বাদশ শতাব্দীর পাহাড়পুরের প্রাচীন মৃৎপাত্র ও পোড়ামাটির ফলক</p>
+                            </div>
+                            <div class="collection-item">
+                                <div class="collection-icon"><i class="fas fa-scroll"></i></div>
+                                <h4>লিপিকর্ম ও পাণ্ডুলিপি</h4>
+                                <p>সংস্কৃত, বাংলা, আরবি ও ফার্সি ভাষায় শিলালিপি ও দুর্লভ পবিত্র কুরআন শরীফ</p>
+                            </div>
+                            <div class="collection-item">
+                                <div class="collection-icon"><i class="fas fa-coins"></i></div>
+                                <h4>অন্যান্য</h4>
+                                <p>প্রাচীন মুদ্রা, যুদ্ধাস্ত্র, মুঘল চিত্রকর্ম ও আদিবাসী সংস্কৃতির নিদর্শন</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visitor-info">
+                        <h3><i class="fas fa-ticket-alt"></i> পরিদর্শন তথ্য (২০২৬)</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span class="info-label">অবস্থান</span>
+                                    <span class="info-value">মিউজিয়াম রোড, হেতেম খাঁ, রাজশাহী-৬০০০</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <span class="info-label">সময়সূচি</span>
+                                    <span class="info-value">শনি থেকে বুধবার (সকাল ১০:০০ - বিকাল ৫:০০)</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-ban"></i>
+                                <div>
+                                    <span class="info-label">ছুটির দিন</span>
+                                    <span class="info-value">প্রতি বৃহস্পতিবার ও শুক্রবার</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <div>
+                                    <span class="info-label">প্রবেশ মূল্য</span>
+                                    <span class="info-value">প্রাপ্তবয়স্ক ২০ টাকা, শিশু ১০ টাকা</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================
+          Tourism & Heritage
+        ================================ -->
+        <section class="content-section" id="tourism">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">পর্যটন</span>
+                <h2 class="section-title">পর্যটন ও ঐতিহাসিক নিদর্শন</h2>
+                <p class="section-desc">Tourism & Heritage</p>
+            </div>
+
+            <p class="paragraph" data-aos="fade-up">
+                রাজশাহী জেলার আনাচে-কানাচে ছড়িয়ে আছে ইতিহাস ও ঐতিহ্যের স্মারক।
+            </p>
+
+            <!-- Puthia Temple -->
+            <div class="attraction-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="attraction-image">
+                    <div class="attraction-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <i class="fas fa-gopuram"></i>
+                    </div>
+                    <div class="attraction-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.8</span>
+                    </div>
+                </div>
+                <div class="attraction-content">
+                    <div class="attraction-tags">
+                        <span class="tag">মন্দির</span>
+                        <span class="tag">স্থাপত্য</span>
+                    </div>
+                    <h3>Puthia Temple Complex</h3>
+                    <p class="paragraph">
+                        বাংলাদেশের সবচেয়ে সুন্দর মন্দির কমপ্লেক্সগুলোর একট,
+                        যেখানে ইন্দো-সারাসনিক স্থাপত্যের নিখুঁত ব্যবহার দেখা যায়।
+                    </p>
+                    <a href="#" class="attraction-link">
+                        <span>আরও জানুন</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bagha Mosque -->
+            <div class="attraction-card reverse" data-aos="fade-up" data-aos-delay="150">
+                <div class="attraction-image">
+                    <img src="https://i.postimg.cc/9FgQjDzM/bagha-masque.jpg" alt="ঐতিহাসিক বাঘা মসজিদ" loading="lazy">
+                    <div class="attraction-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span>
+                    </div>
+                </div>
+                <div class="attraction-content">
+                    <div class="attraction-tags">
+                        <span class="tag">মসজিদ</span>
+                        <span class="tag">ইতিহাস</span>
+                        <span class="tag">৫০ টাকার নোট</span>
+                    </div>
+                    <h3>ঐতিহাসিক বাঘা মসজিদ</h3>
+                    <div class="attraction-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span><strong>নির্মাণ:</strong> ১৫২৩ খ্রিষ্টাব্দ, সুলতান নাসিরউদ্দিন নসরত শাহ</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-palette"></i>
+                            <span><strong>টেরাকোটা:</strong> অত্যন্ত চমৎকার পোড়ামাটির ফলক ও কারুকাজ</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-drafting-compass"></i>
+                            <span><strong>স্থাপত্য:</strong> ১০ গম্বুজ বিশিষ্ট, ৮ ফুট পুরু দেয়াল</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-water"></i>
+                            <span><strong>দীঘি:</strong> পাশে ৫২ বিঘার বিশাল ঐতিহাসিক দীঘি</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><strong>অবস্থান:</strong> রাজশাহী শহর থেকে প্রায় ৪০ কিমি দূরে বাঘা উপজেলা</span>
+                        </div>
+                    </div>
+                    <div class="attraction-note">
+                        <i class="fas fa-info-circle"></i>
+                        <span>প্রতি বছর ঈদুল ফিতরের সময় কয়েকশ বছরের পুরনো ঐতিহ্যবাহী 'বাঘার মেলা' বসে</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- T-Bandh -->
+            <div class="attraction-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="attraction-image">
+                    <img src="https://i.postimg.cc/VNLrWxSd/t-badh.jpg" alt="রাজশাহী টি-বাঁধ" loading="lazy">
+                    <div class="attraction-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.7</span>
+                    </div>
+                </div>
+                <div class="attraction-content">
+                    <div class="attraction-tags">
+                        <span class="tag">বিনোদন</span>
+                        <span class="tag">প্রকৃতি</span>
+                        <span class="tag">ফটোগ্রাফি</span>
+                    </div>
+                    <h3>রাজশাহী টি-বাঁধ</h3>
+                    <p class="paragraph">
+                        মূলত পদ্মা নদীর তীব্র ভাঙন রোধে তৈরি হলেও, বর্তমানে এটি রাজশাহী নগরবাসীর কাছে প্রধান বিনোদন কেন্দ্রস্থলে পরিণত হয়েছে।
+                    </p>
+                    <div class="attraction-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>শহরের জলবায়ুকে শীতল ও দূষণমুক্ত রাখে</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-walking"></i>
+                            <span>আধুনিক বসার জায়গা, হাঁটার পথ ও খাবারের দোকান</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-sun"></i>
+                            <span>দিগন্তজোড়া সূর্যাস্ত ও অপরূপ প্রাকৃতিক দৃশ্য</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- I-Bandh -->
+            <div class="attraction-card reverse" data-aos="fade-up" data-aos-delay="250">
+                <div class="attraction-image">
+                    <img src="https://i.postimg.cc/0jfdNpFL/FB-IMG-1768456389384.jpg" alt="রাজশাহীর আই বাঁধ" loading="lazy">
+                    <div class="attraction-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.6</span>
+                    </div>
+                </div>
+                <div class="attraction-content">
+                    <div class="attraction-tags">
+                        <span class="tag">নদী</span>
+                        <span class="tag">ভ্রমণ</span>
+                    </div>
+                    <h3>রাজশাহীর আই বাঁধ</h3>
+                    <div class="attraction-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><strong>অবস্থান:</strong> কোর্ট বাজার এলাকা, জিরো পয়েন্ট থেকে প্রায় ৫ কিমি পশ্চিমে</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-sun"></i>
+                            <span><strong>আকর্ষণ:</strong> পদ্মা নদীর মনোরম দৃশ্য, বিশেষ করে সূর্যাস্তের সময়</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tree"></i>
+                            <span><strong>পঞ্চবটি:</strong> পঞ্চবটি এলাকাতেও আই বাঁধ রয়েছে যা বেশ জনপ্রিয়</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-ship"></i>
+                            <span><strong>কার্যক্রম:</strong> নদীর পাড়ে হাঁটাহাঁটি ও নৌকা ভ্রমণের সুযোগ</span>
+                        </div>
+                    </div>
+                    <div class="attraction-note">
+                        <i class="fas fa-award"></i>
+                        <span>২০২৬ সালের হালনাগাদ তথ্য অনুযায়ী, এটি বর্তমানে রাজশাহীর অন্যতম পরিচ্ছন্ন ও সুন্দর ভ্রমণের জায়গা</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================
+          Population & Statistics
+        ================================ -->
+        <section class="content-section" id="statistics">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">পরিসংখ্যান</span>
+                <h2 class="section-title">এক নজরে পরিসংখ্যান</h2>
+                <p class="section-desc">Statistics at a Glance</p>
+            </div>
+
+            <div class="stats-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <div class="stat-value" data-count="2407.01">0</div>
+                    <div class="stat-unit">বর্গ কিমি</div>
+                    <div class="stat-label">মোট আয়তন</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-value" data-count="2915009">0</div>
+                    <div class="stat-unit">জন (২০২২)</div>
+                    <div class="stat-label">মোট জনসংখ্যা</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <div class="stat-value" data-count="77.9">0</div>
+                    <div class="stat-unit">%</div>
+                    <div class="stat-label">সাক্ষরতার হার</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="stat-value" data-count="11">0</div>
+                    <div class="stat-unit">টি</div>
+                    <div class="stat-label">প্রধান নদ-নদী</div>
+                </div>
+            </div>
+
+            <div class="rivers-section" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fas fa-water"></i> প্রধান নদ-নদী</h3>
+                <div class="river-tags">
+                    <span class="river-tag major">পদ্মা নদী</span>
+                    <span class="river-tag">মহানন্দা নদী</span>
+                    <span class="river-tag">বড়াল নদী</span>
+                    <span class="river-tag">বানাই নদী</span>
+                    <span class="river-tag">আত্রাই নদী</span>
+                    <span class="river-tag">পুনর্ভবা নদী</span>
+                    <span class="river-tag">শিব নদী</span>
+                    <span class="river-tag">মাথাভাঙা নদী</span>
+                    <span class="river-tag">মুসাখান নদী</span>
+                    <span class="river-tag">ফকিরনী নদী</span>
+                </div>
+            </div>
+
+            
+        <!-- ===============================
+          Comprehensive Rajshahi Details
+        ================================ -->
+
+        <!-- 1. Historical Timeline -->
+        <section class="content-section" id="history">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">ইতিহাস</span>
+                <h2 class="section-title">রাজশাহীর ঐতিহাসিক সময়রেখা</h2>
+                <p class="section-desc">Historical Timeline of Rajshahi</p>
+            </div>
+
+            <div class="timeline" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-item">
+                    <div class="timeline-marker">৩রম শতাব্দী খ্রি.</div>
+                    <div class="timeline-content">
+                        <h3>মহাস্থানগড়</h3>
+                        <p>পুণ্ড্রনগর — বাংলাদেশের প্রাচীনতম শহর, প্রাচীন বাংলার রাজধানী। মৌর্য় ও গুপ্ত আমলের নিদর্শন।</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">৭ম-১২ম শতাব্দী</div>
+                    <div class="timeline-content">
+                        <h3>পাল ও সেন আমল</h3>
+                        <p>বরেন্দ্র জনপদের উত্থান। পাহাড়পুরের সোমপুর মহাবিহার (বিশ্ব ঐতিহ্য) নির্মাণ। বৌদ্ধ সভ্যতার স্বর্ণযুগ।</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">১৬৩৯</div>
+                    <div class="timeline-content">
+                        <h3>রাজশাহী শহর প্রতিষ্ঠা</h3>
+                        <p>নবাব মুর্শিদ কুলি খানের আমলে "বোয়ালিয়া" নামে প্রতিষ্ঠিত। পরে "রাজশাহী" নামকরণ — সম্ভবত "রাজা" + "শাহী" থেকে।</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">১৭২২</div>
+                    <div class="timeline-content">
+                        <h3>রাজশাহী জমিদারি</h3>
+                        <p>বাংলার অন্যতম বৃহত্তম জমিদারি। ১২,৯০০ বর্গমাইল এলাকা জুড়ে রেশম ব্যবসার স্বর্ণযুগ।</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">১৭৭০</div>
+                    <div class="timeline-content">
+                        <h3>ব্রিটিশ আমল</h3>
+                        <p>ডাচদের "বড়ো কুঠি" নির্মাণ — শহরের প্রথম পাকা ইমারত, একমাত্র রেশম বাণিজ্যের জন্য।</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">১৮২৮</div>
+                    <div class="timeline-content">
+                        <h3>রাজশাহী কলেজিয়েট স্কুল</h3>
+                        <p>দেশের অন্যতম প্রাচীন শিক্ষাপ্রতিষ্ঠান প্রতিষ্ঠা।</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">১৮৭৩</div>
+                    <div class="timeline-content">
+                        <h3>রাজশাহী কলেজ</h3>
+                        <p>দেশের দ্বিতীয় প্রাচীনতম কলেজ প্রতিষ্ঠা।</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">১৯১০</div>
+                    <div class="timeline-content">
+                        <h3>বরেন্দ্র গবেষণা জাদুঘর</h3>
+                        <p>বাংলাদেশের প্রাচীনতম জাদুঘর প্রতিষ্ঠা।</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">১৯৫৩</div>
+                    <div class="timeline-content">
+                        <h3>রাজশাহী বিশ্ববিদ্যালয়</h3>
+                        <p>দেশের দ্বিতীয় বৃহত্তম বিশ্ববিদ্যালয় প্রতিষ্ঠা।</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">১৯৯৭</div>
+                    <div class="timeline-content">
+                        <h3>সিটি কর্পোরেশন</h3>
+                        <p>রাজশাহী পৌরসভা থেকে সিটি কর্পোরেশনে উন্নীতকরণ।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. More Attractions -->
+        <section class="content-section" id="more-attractions">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">আরও দর্শনীয় স্থান</span>
+                <h2 class="section-title">রাজশাহীর অপরূপ স্থান</h2>
+                <p class="section-desc">More Tourist Attractions</p>
+            </div>
+
+            <div class="attraction-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="attraction-card-compact">
+                    <div class="attraction-img-placeholder" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                        <i class="fas fa-gopuram"></i>
+                    </div>
+                    <div class="attraction-info">
+                        <h3>পাহাড়পুর বৌদ্ধবিহার</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> নওগাঁ (নিকটবর্তী)</p>
+                        <p>৮ম শতাব্দীর সোমপুর মহাবিহার — বিশ্ব ঐতিহ্যের নিদর্শন, হিমালয়ের দক্ষিণে দ্বিতীয় বৃহত্তম বৌদ্ধবিহার।</p>
+                    </div>
+                </div>
+                <div class="attraction-card-compact">
+                    <div class="attraction-img-placeholder" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <div class="attraction-info">
+                        <h3>কুসুম্বা মসজিদ</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> মোহনপুর</p>
+                        <p>১৬শ শতাব্দীর সুলতানি আমলের মসজিদ, অত্যন্দ চমৎকার পাথরের কারুকাজ।</p>
+                    </div>
+                </div>
+                <div class="attraction-card-compact">
+                    <div class="attraction-img-placeholder" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="attraction-info">
+                        <h3>পদ্মা গার্ডেন</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> রাজশাহী শহর</p>
+                        <p>পদ্মা নদীর তীরে সুন্দর পার্ক ও বিনোদন কেন্দ্র।</p>
+                    </div>
+                </div>
+                <div class="attraction-card-compact">
+                    <div class="attraction-img-placeholder" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <div class="attraction-info">
+                        <h3>শহীদ কামরুজ্জামান চিড়িয়াখানা</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> রাজশাহী শহর</p>
+                        <p>বিভিন্ন প্রজাতির পশুপাখি ও উদ্ভিদ সংরক্ষণাগার।</p>
+                    </div>
+                </div>
+                <div class="attraction-card-compact">
+                    <div class="attraction-img-placeholder" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <div class="attraction-info">
+                        <h3>দিঘাপতিয়া রাজবাড়ি</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> নাটোর (নিকটবর্তী)</p>
+                        <p>ব্রিটিশ আমলের জমিদারদের প্রাসাদ, বর্তমানে উত্তরা গণভবন।</p>
+                    </div>
+                </div>
+                <div class="attraction-card-compact">
+                    <div class="attraction-img-placeholder" style="background: linear-gradient(135deg, #a8edea, #fed6e3);">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="attraction-info">
+                        <h3>লালন শাহ মুক্ত মঞ্চ</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> রাজশাহী শহর</p>
+                        <p>বাউল গানের আসর ও সাংস্কৃতিক অনুষ্ঠানের কেন্দ্র।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Mango Varieties -->
+        <section class="content-section" id="mango">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">আমের রাজধানী</span>
+                <h2 class="section-title">রাজশাহীর বিখ্যাত আমের প্রজাতি</h2>
+                <p class="section-desc">Famous Mango Varieties of Rajshahi</p>
+            </div>
+
+            <div class="mango-hero" data-aos="fade-up">
+                <div class="mango-badge">
+                    <i class="fas fa-crown"></i>
+                    <span>জিআই ট্যাগ প্রাপ্ত</span>
+                </div>
+                <p class="paragraph">রাজশাহীর আম এখন <span class="highlight-text">Geographical Indication (GI)</span> ট্যাগ প্রাপ্ত — বিশ্বজুড়ে এর স্বীকৃতি।</p>
+            </div>
+
+            <div class="mango-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="mango-card">
+                    <div class="mango-icon" style="background: linear-gradient(135deg, #FFD93D, #F6AD55);">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>গোপালভোগ</h3>
+                    <span class="mango-tag">Early Season</span>
+                    <p>সুগন্ধি, নরম এবং গভীর মিষ্টি স্বাদ। প্রিমিয়াম বক্সের জন্য শ্রেষ্ঠ।</p>
+                </div>
+                <div class="mango-card">
+                    <div class="mango-icon" style="background: linear-gradient(135deg, #FF6B6B, #EE5A24);">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>হিমসাগর / খিরসাপাত</h3>
+                    <span class="mango-tag">Gift Box</span>
+                    <p>ঘন মাংস, কম তন্তু, উৎকৃষ্ট স্বাদ। উপহারের জন্য আদর্শ।</p>
+                </div>
+                <div class="mango-card">
+                    <div class="mango-icon" style="background: linear-gradient(135deg, #4ECDC4, #44A08D);">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>ল্যাংড়া</h3>
+                    <span class="mango-tag">Best Seller</span>
+                    <p>বিখ্যাত রাজশাহী সুগন্ধি, সুষম মিষ্টি। জিআই ট্যাগ প্রাপ্ত।</p>
+                </div>
+                <div class="mango-card">
+                    <div class="mango-icon" style="background: linear-gradient(135deg, #A8E6CF, #7BC8A4);">
+                        <i class="fas fa-lemon"></i>
+                    </div>
+                    <h3>ফজলি</h3>
+                    <span class="mango-tag">Bulk</span>
+                    <p>বড় আকার, প্রচুর রস। পরিবার ও পাইকারি জন্য শ্রেষ্ঠ।</p>
+                </div>
+                <div class="mango-card">
+                    <div class="mango-icon" style="background: linear-gradient(135deg, #FFB6C1, #FF69B4);">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>আম্রপালি</h3>
+                    <span class="mango-tag">Late Season</span>
+                    <p>ছোট ফল, ঘন মিষ্টি। মৌসুমের শেষের চাহিদা।</p>
+                </div>
+                <div class="mango-card">
+                    <div class="mango-icon" style="background: linear-gradient(135deg, #DDA0DD, #9370DB);">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>রানিপ্রসাদ</h3>
+                    <span class="mango-tag">Early</span>
+                    <p>প্রাথমিক মৌসুমের আম, তাজা স্বাদ।</p>
+                </div>
+            </div>
+
+            <div class="mango-season" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fas fa-calendar-alt"></i> আমের মৌসুমি ক্যালেন্ডার</h3>
+                <div class="season-timeline">
+                    <div class="season-item">
+                        <span class="season-month">মে</span>
+                        <span class="season-variety">গোপালভোগ, রানিপ্রসাদ</span>
+                    </div>
+                    <div class="season-item">
+                        <span class="season-month">জুন</span>
+                        <span class="season-variety">হিমসাগর, ল্যাংড়া, উপহার বক্স</span>
+                    </div>
+                    <div class="season-item">
+                        <span class="season-month">জুলাই</span>
+                        <span class="season-variety">ফজলি, আম্রপালি, পাইকারি</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Silk Industry -->
+        <section class="content-section" id="silk">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">রেশম শিল্প</span>
+                <h2 class="section-title">রাজশাহী রেশম: ইতিহাস ও ঐতিহ্য</h2>
+                <p class="section-desc">Rajshahi Silk: History & Heritage</p>
+            </div>
+
+            <div class="silk-timeline" data-aos="fade-up" data-aos-delay="100">
+                <div class="silk-era">
+                    <div class="silk-year">১৩শ শতাব্দী</div>
+                    <p>রাজশাহী অঞ্চলে রেশম উৎপাদন শুরু। তখন "গঙ্গা সিল্ক" নামে পরিচিত।</p>
+                </div>
+                <div class="silk-era">
+                    <div class="silk-year">১৭শ শতাব্দী</div>
+                    <p>ইউরোপিয়ান (ডাচ, ফরাসি, ইংরেজ) বণিকরা রেশম বাণিজ্যে আগ্রহী হন। কাসিমবাজারে বড়ো রেশম বাজার গড়ে ওঠে।</p>
+                </div>
+                <div class="silk-era">
+                    <div class="silk-year">১৭৮৮</div>
+                    <p>জেমস গ্রান্টের রিপোর্ট: "ভারতের চার-পঞ্চমাংশ রেশম রাজশাহীতে উৎপাদিত হয়।"</p>
+                </div>
+                <div class="silk-era">
+                    <div class="silk-year">১৯৬১</div>
+                    <p>রাজশাহী সিল্ক ফ্যাক্টরি প্রতিষ্ঠা — সরকারি মালিকানায়।</p>
+                </div>
+                <div class="silk-era">
+                    <div class="silk-year">২০০২</div>
+                    <p>দুঃখজনকভাবে রাজশাহী সিল্ক ফ্যাক্টরি বন্ধ হয়ে যায়।</p>
+                </div>
+                <div class="silk-era highlight">
+                    <div class="silk-year">২০২১</div>
+                    <p><strong>রাজশাহী রেশম Geographical Indication (GI) ট্যাগ পায়!</strong></p>
+                </div>
+            </div>
+
+            <div class="silk-types" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fas fa-spider"></i> রেশমের প্রকারভেদ</h3>
+                <div class="silk-type-grid">
+                    <div class="silk-type-card">
+                        <div class="silk-type-icon" style="background: #E8D5B7;">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h4>মালবেরি সিল্ক</h4>
+                        <span class="silk-quality">সর্বোচ্চ মান</span>
+                        <p>Bombyx mori পোকা থেকে। সবচেয়ে মিহি ও মূল্যবান।</p>
+                    </div>
+                    <div class="silk-type-card">
+                        <div class="silk-type-icon" style="background: #D4A574;">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>এরি সিল্ক (এন্ডি)</h4>
+                        <span class="silk-quality">Human Friendly</span>
+                        <p>পোকা মারা হয় না — প্রাকৃতিকভাবে বেরিয়ে আসার পর কোকুন সংগ্রহ।</p>
+                    </div>
+                    <div class="silk-type-card">
+                        <div class="silk-type-icon" style="background: #C19A6B;">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h4>তসর সিল্ক</h4>
+                        <span class="silk-quality">Wild</span>
+                        <p>জঙ্গলের পোকা থেকে — দৃঢ় ও সুন্দর।</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="silk-products" data-aos="fade-up" data-aos-delay="300">
+                <h3><i class="fas fa-shopping-bag"></i> জনপ্রিয় রেশম পণ্য</h3>
+                <div class="product-tags">
+                    <span class="product-tag">বলাকা কারচুপি</span>
+                    <span class="product-tag">সুই-সুতা কাতান</span>
+                    <span class="product-tag">কোটি সিল্ক</span>
+                    <span class="product-tag">জয়শ্রী</span>
+                    <span class="product-tag">সিল্ক কাতান</span>
+                    <span class="product-tag">ওয়াটার কাতান</span>
+                    <span class="product-tag">জামদানি কাতান</span>
+                    <span class="product-tag">বোরকাতান</span>
+                    <span class="product-tag">দুপিয়ানা</span>
+                    <span class="product-tag">ঝরনা কাতান</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Culture & Festivals -->
+        <section class="content-section" id="culture-festivals">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">সংস্কৃতি ও উৎসব</span>
+                <h2 class="section-title">রাজশাহীর সাংস্কৃতিক ঐতিহ্য</h2>
+                <p class="section-desc">Culture & Festivals</p>
+            </div>
+
+            <div class="culture-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="culture-card-large">
+                    <div class="culture-icon-large" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+                        <i class="fas fa-drum"></i>
+                    </div>
+                    <h3>গম্ভীরা</h3>
+                    <p class="culture-origin"><i class="fas fa-map-marker-alt"></i> চাঁপাইনবাবগঞ্জ, রাজশাহী ও নওগাঁ</p>
+                    <p>উত্তরবঙ্গের ঐতিহ্যবাহী লোকগীতি ও নৃত্য। দুইজন শিল্পী — একজন নানা ও একজন নাতি — সামাজিক সচেতনতামূলক বিষয় নিয়ে আলাপ করেন। ব্যঙ্গ ও কটাক্ষের মাধ্যমে সমাজের দোষ-ত্রুটি তুলে ধরা হয়।</p>
+                </div>
+                <div class="culture-card-large">
+                    <div class="culture-icon-large" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <h3>বাউল গান</h3>
+                    <p class="culture-origin"><i class="fas fa-map-marker-alt"></i> রাজশাহী অঞ্চল</p>
+                    <p>লালন শাহের ঐতিহ্য বহন করে রাজশাহীর বাউলরা। লালন শাহ মুক্ত মঞ্চে নিয়মিত বাউল আসর বসে।</p>
+                </div>
+                <div class="culture-card-large">
+                    <div class="culture-icon-large" style="background: linear-gradient(135deg, #f39c12, #e67e22);">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>পহেলা বৈশাখ</h3>
+                    <p class="culture-origin"><i class="fas fa-calendar"></i> ১৪ এপ্রিল</p>
+                    <p>রাজশাহীতে বর্ষবরণ উদযাপন। রমনা বটমূলের মতো রাজশাহীতেও মঙ্গল শোভাযাত্রা ও সাংস্কৃতিক অনুষ্ঠান।</p>
+                </div>
+                <div class="culture-card-large">
+                    <div class="culture-icon-large" style="background: linear-gradient(135deg, #27ae60, #2ecc71);">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>আম মেলা</h3>
+                    <p class="culture-origin"><i class="fas fa-calendar"></i> মে-জুলাই</p>
+                    <p>বার্ষিক আম উৎসব। বিভিন্ন প্রজাতির আম প্রদর্শনী ও প্রতিযোগিতা।</p>
+                </div>
+                <div class="culture-card-large">
+                    <div class="culture-icon-large" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>রেশম মেলা</h3>
+                    <p class="culture-origin"><i class="fas fa-calendar"></i> বার্ষিক</p>
+                    <p>রাজশাহীর রেশম পণ্য প্রদর্শনী ও বিক্রয়। স্থানীয় শিল্পীদের হস্তশিল্প প্রদর্শন।</p>
+                </div>
+                <div class="culture-card-large">
+                    <div class="culture-icon-large" style="background: linear-gradient(135deg, #1abc9c, #16a085);">
+                        <i class="fas fa-om"></i>
+                    </div>
+                    <h3>বিজয়া দশমী</h3>
+                    <p class="culture-origin"><i class="fas fa-calendar"></i> আশ্বিন মাস</p>
+                    <p>রাজশাহীতে দুর্গাপূজা উদযাপন। পুঠিয়ার মন্দিরগুলোতে বিশেষ আয়োজন।</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Transportation -->
+        <section class="content-section" id="transport">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">যোগাযোগ</span>
+                <h2 class="section-title">রাজশাহীর যোগাযোগ ব্যবস্থা</h2>
+                <p class="section-desc">Transportation & Connectivity</p>
+            </div>
+
+            <div class="transport-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="transport-card">
+                    <div class="transport-icon" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>শাহ মখদুম বিমানবন্দর</h3>
+                    <span class="transport-code">RJH</span>
+                    <p>আন্তরজাতিক বিমানবন্দর। ঢাকা থেকে ৩০ মিনিটের ফ্লাইট। কলকাতা, কুয়ালালামপুর সরাসরি ফ্লাইট।</p>
+                    <div class="transport-stats">
+                        <span><i class="fas fa-road"></i> শহর থেকে ১০ কিমি</span>
+                    </div>
+                </div>
+                <div class="transport-card">
+                    <div class="transport-icon" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+                        <i class="fas fa-train"></i>
+                    </div>
+                    <h3>রাজশাহী রেলওয়ে স্টেশন</h3>
+                    <span class="transport-code">RJH</span>
+                    <p>ঐতিহ্যবাহী স্টেশন। ঢাকা থেকে সিল্কসিটি এক্সপ্রেস, পদ্মা এক্সপ্রেস। খুলনা, চট্টগ্রাম সংযোগ।</p>
+                    <div class="transport-stats">
+                        <span><i class="fas fa-clock"></i> ঢাকা → ৫-৬ ঘণ্টা</span>
+                    </div>
+                </div>
+                <div class="transport-card">
+                    <div class="transport-icon" style="background: linear-gradient(135deg, #27ae60, #2ecc71);">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3>বাস টার্মিনাল</h3>
+                    <span class="transport-code">Bus Stand</span>
+                    <p>রাজশাহী বাস টার্মিনাল — দেশের সব প্রান্তে এসি ও নন-এসি বাস। ভারতের কলকাতা, সিলিগুড়ি সংযোগ।</p>
+                </div>
+                <div class="transport-card">
+                    <div class="transport-icon" style="background: linear-gradient(135deg, #f39c12, #e67e22);">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>নৌপথ</h3>
+                    <span class="transport-code">River</span>
+                    <p>পদ্মা নদীতে লঞ্চ ও স্টিমার সার্ভিস। ঢাকা-রাজশাহী নৌযাত্রা — সুন্দর অভিজ্ঞতা।</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Healthcare -->
+        <section class="content-section" id="healthcare">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">স্বাস্থ্য</span>
+                <h2 class="section-title">রাজশাহীর স্বাস্থ্য সেবা</h2>
+                <p class="section-desc">Healthcare Facilities</p>
+            </div>
+
+            <div class="health-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="health-card major">
+                    <div class="health-icon"><i class="fas fa-hospital"></i></div>
+                    <h3>রাজশাহী মেডিকেল কলেজ হাসপাতাল</h3>
+                    <span class="health-badge">১০০০+ শয্যা</span>
+                    <p>১৯৫৮ সালে প্রতিষ্ঠিত। উত্তরবঙ্গের সবচেয়ে বড় সরকারি হাসপাতাল।</p>
+                </div>
+                <div class="health-card">
+                    <div class="health-icon"><i class="fas fa-hospital-alt"></i></div>
+                    <h3>রাজশাহী সিএমএইচ</h3>
+                    <span class="health-badge">সামরিক</span>
+                    <p>সেনাবাহিনীর হাসপাতাল — সাধারণ জনগণের জন্যও উন্মুক্ত।</p>
+                </div>
+                <div class="health-card">
+                    <div class="health-icon"><i class="fas fa-clinic-medical"></i></div>
+                    <h3>বারেন্দ্র জেনারেল হাসপাতাল</h3>
+                    <span class="health-badge">বেসরকারি</span>
+                    <p>আধুনিক সুবিধাসম্পন্ন বেসরকারি হাসপাতাল।</p>
+                </div>
+                <div class="health-card">
+                    <div class="health-icon"><i class="fas fa-ribbon"></i></div>
+                    <h3>আইসিডিডিআরবি</h3>
+                    <span class="health-badge">গবেষণা</span>
+                    <p>আন্তর্জাতিক ডায়রিয়া রোগ গবেষণা কেন্দ্র। বিশ্ববিখ্যাত।</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Sports -->
+        <section class="content-section" id="sports">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">খেলাধুলা</span>
+                <h2 class="section-title">রাজশাহীর ক্রীড়া জগৎ</h2>
+                <p class="section-desc">Sports & Cricket</p>
+            </div>
+
+            <div class="sports-hero" data-aos="fade-up">
+                <div class="sports-team-badge">
+                    <i class="fas fa-trophy"></i>
+                    <span>BPL চ্যাম্পিয়ন × ২</span>
+                </div>
+            </div>
+
+            <div class="sports-content" data-aos="fade-up" data-aos-delay="100">
+                <div class="bpl-card">
+                    <div class="bpl-logo" style="background: linear-gradient(135deg, #FFD700, #FFA500);">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="bpl-info">
+                        <h3>রাজশাহী ওয়ারিয়র্স</h3>
+                        <p class="bpl-former">পূর্বে: দুরন্ত রাজশাহী → রাজশাহী কিংস → রাজশাহী রয়য়ালস → দুরবার রাজশাহী</p>
+                        <div class="bpl-stats">
+                            <div class="bpl-stat">
+                                <span class="stat-num">২০২০</span>
+                                <span class="stat-label">প্রথম শিরোপা</span>
+                            </div>
+                            <div class="bpl-stat">
+                                <span class="stat-num">২০২৬</span>
+                                <span class="stat-label">দ্বিতীয় শিরোপা</span>
+                            </div>
+                            <div class="bpl-stat">
+                                <span class="stat-num">নাজমুল</span>
+                                <span class="stat-label">অধিনায়ক</span>
+                            </div>
+                        </div>
+                        <p class="bpl-stadium"><i class="fas fa-map-marker-alt"></i> হোম গ্রাউন্ড: শহীদ কামরুজ্জামান স্টেডিয়াম</p>
+                    </div>
+                </div>
+
+                <div class="stadium-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stadium-image-placeholder" style="background: linear-gradient(135deg, #1e3c72, #2a5298);">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <div class="stadium-info">
+                        <h3>শহীদ আ.হ.ম. কামরুজ্জামান স্টেডিয়াম</h3>
+                        <p>রাজশাহীর প্রধান ক্রীড়া কমপ্লেক্স। BPL ম্যাচ, জাতীয় ফুটবল ও ক্রিকেট টুর্নামেন্ট আয়োজন।</p>
+                        <div class="stadium-features">
+                            <span><i class="fas fa-users"></i> ধারণক্ষমতা: ১৫,০০০+</span>
+                            <span><i class="fas fa-lightbulb"></i> ফ্লাডলাইট</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Food Section -->
+        <section class="content-section" id="food">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">খাবার</span>
+                <h2 class="section-title">রাজশাহীর স্বাদ</h2>
+                <p class="section-desc">Famous Food & Sweets</p>
+            </div>
+
+            <div class="food-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="food-card sweet">
+                    <div class="food-icon" style="background: linear-gradient(135deg, #FFD93D, #F6AD55);">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <h3>রাজশাহীর দই</h3>
+                    <span class="food-tag">বিখ্যাত</span>
+                    <p>ঘন, ক্রিমি, অত্যন্ত মিষ্টি। শতাব্দীর পর শতাব্দী ধরে একই পদ্ধতিতে তৈরি।</p>
+                </div>
+                <div class="food-card sweet">
+                    <div class="food-icon" style="background: linear-gradient(135deg, #5D4037, #3E2723);">
+                        <i class="fas fa-cookie"></i>
+                    </div>
+                    <h3>কালোজাম</h3>
+                    <span class="food-tag">Traditional</span>
+                    <p>কালচে রঙের, মিষ্টি সিরাপে ডুবানো — রাজশাহীর বিশেষত্ব।</p>
+                </div>
+                <div class="food-card">
+                    <div class="food-icon" style="background: linear-gradient(135deg, #FF6B6B, #EE5A24);">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <h3>পুরি বার্গার</h3>
+                    <span class="food-tag">Street Food</span>
+                    <p>রাজশাহীর নিজস্ব আবিষ্কার — পাকোড়া প্যাটি, সিঙ্গারা ভাজি দিয়ে।</p>
+                </div>
+                <div class="food-card">
+                    <div class="food-icon" style="background: linear-gradient(135deg, #4ECDC4, #44A08D);">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <h3>সিক বার্গার</h3>
+                    <span class="food-tag">Evening Snack</span>
+                    <p>মশলাদার সিক কাবাব ধোঁয়ায়িত রুটিতে — সন্ধ্যার জনপ্রিয়।</p>
+                </div>
+                <div class="food-card">
+                    <div class="food-icon" style="background: linear-gradient(135deg, #A8E6CF, #7BC8A4);">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>বট পরোটা</h3>
+                    <span class="food-tag">Student Favorite</span>
+                    <p>তালাইমারীর বিখ্যাত সন্ধ্যা নাস্তা — ছাত্রদের প্রিয়।</p>
+                </div>
+                <div class="food-card sweet">
+                    <div class="food-icon" style="background: linear-gradient(135deg, #FFB6C1, #FF69B4);">
+                        <i class="fas fa-bowl-rice"></i>
+                    </div>
+                    <h3>ছানার পোলাও</h3>
+                    <span class="food-tag">Unique</span>
+                    <p>ছানা দিয়ে বাসমতি চালের আকারে তৈরি — রাজশাহীর একমাত্র।</p>
+                </div>
+                <div class="food-card sweet">
+                    <div class="food-icon" style="background: linear-gradient(135deg, #DDA0DD, #9370DB);">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <h3>বাটার মোড়ের জিলাপি</h3>
+                    <span class="food-tag">Heritage</span>
+                    <p>কালিবাবুর হাতে তৈরি — ২০১৭ পর্যন্ত। এখন উত্তরাধিকারীরা চালিয়ে যাচ্ছেন।</p>
+                </div>
+                <div class="food-card">
+                    <div class="food-icon" style="background: linear-gradient(135deg, #f39c12, #e67e22);">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>শাশলিক</h3>
+                    <span class="food-tag">NFC Cart</span>
+                    <p>লক্ষ্মীপুরের NFC কার্টের বিখ্যাত চিকেন শাশলিক।</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Detailed Statistics -->
+        <section class="content-section" id="detailed-stats">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">বিস্তারিত পরিসংখ্যান</span>
+                <h2 class="section-title">রাজশাহী এক নজরে (২০২২ আদমশুমারি)</h2>
+                <p class="section-desc">Detailed Statistics (2022 Census)</p>
+            </div>
+
+            <div class="stats-detailed" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-row">
+                    <div class="stat-label-full">মোট জনসংখ্যা</div>
+                    <div class="stat-value-full">২৯,১৪,৮১৩</div>
+                    <div class="stat-note">পুরুষ: ১৪,৫৯,২২৫ | মহিলা: ১৪,৫৫,৫৮৮</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label-full">সিটি কর্পোরেশন জনসংখ্যা</div>
+                    <div class="stat-value-full">৫,৫৩,২৪১</div>
+                    <div class="stat-note">পুরুষ: ২,৮৪,৮১৮ | মহিলা: ২,৬৮,৪২৩</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label-full">গড় পরিবারের আকার</div>
+                    <div class="stat-value-full">৩.৬৭</div>
+                    <div class="stat-note">গ্রামীণ: ৩.৬৪ | শহর: ৩.৭৩</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label-full">যৌন অনুপাত</div>
+                    <div class="stat-value-full">১০০.২৫</div>
+                    <div class="stat-note">প্রতি ১০০ মহিলায় ১০০.২৫ পুরুষ</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label-full">বিদ্যুৎ সুবিধা</div>
+                    <div class="stat-value-full">৯৯.৩০%</div>
+                    <div class="stat-note">জাতীয় গ্রিড: ৯৮.২৬% | সৌর: ০.৯৭%</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label-full">নিরাপদ পানীয় জল</div>
+                    <div class="stat-value-full">৯৭.৮%</div>
+                    <div class="stat-note">টিউবওয়েল: ৮৮.৫% | ট্যাপ: ৯.৩%</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label-full">পরিষ্কার পায়খানা সুবিধা</div>
+                    <div class="stat-value-full">৯৫.১৬%</div>
+                    <div class="stat-note">ফ্লাশ/পোর্ট: ৬৭.১৭% | পিট ল্যাট্রিন: ২২.৯৯%</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label-full">নিজস্ব বাসস্থান</div>
+                    <div class="stat-value-full">৯০.০১%</div>
+                    <div class="stat-note">গ্রাম: ৯৩.৮% | শহর: ৭৬.০৭%</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label-full">প্রবাসী পরিবারের সদস্য</div>
+                    <div class="stat-value-full">২৪,৫০৩</div>
+                    <div class="stat-note">গোদাগাড়ী: ২১.৮২% | সিটি: ১৯.৯০%</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label-full">প্রত্যাবর্তনকারী প্রবাসী</div>
+                    <div class="stat-value-full">৩,৭১৭</div>
+                    <div class="stat-note">গোদাগাড়ী: ১৮.৪৬% | বাগমারা: ১৫.০১%</div>
+                </div>
+            </div>
+
+            <div class="upazila-population" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fas fa-chart-bar"></i> উপজেলাভিত্তিক জনসংখ্যা (২০২২)</h3>
+                <div class="upz-table">
+                    <div class="upz-row header">
+                        <span>উপজেলা</span>
+                        <span>জনসংখ্যা</span>
+                        <span>পরিবার</span>
+                    </div>
+                    <div class="upz-row"><span>গোদাগাড়ী</span><span>৩,৭২,৯৯৪</span><span>৯২,৩৩৮</span></div>
+                    <div class="upz-row"><span>পবা</span><span>৩,৬১,৩২৮</span><span>৯৬,৬৭১</span></div>
+                    <div class="upz-row"><span>বাগমারা</span><span>৩,৭১,১৪০</span><span>১,০৬,০৪৫</span></div>
+                    <div class="upz-row"><span>চারঘাট</span><span>২,২২,৭৫৪</span><span>৬১,০১০</span></div>
+                    <div class="upz-row"><span>পুঠিয়া</span><span>২,২২,৪৮৯</span><span>৬২,৩৩২</span></div>
+                    <div class="upz-row"><span>তানোর</span><span>২,১১,০০১</span><span>৫৮,৪৫৬</span></div>
+                    <div class="upz-row"><span>দুর্গাপুর</span><span>১,৯৬,৫৭০</span><span>৫৬,১৯৭</span></div>
+                    <div class="upz-row"><span>বাঘা</span><span>১,৯৪,২৪২</span><span>৫৩,৫৮১</span></div>
+                    <div class="upz-row"><span>মোহনপুর</span><span>১,৮৫,১২০</span><span>৫২,৫২০</span></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="closing-statement" data-aos="fade-up" data-aos-delay="300">
+                <div class="closing-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p class="paragraph">
+                    রাজশাহী জেলা তাই শুধু একটা ভৌগোলিক নাম নয়,
+                    এটি প্রশাসন, শিক্ষা, সংস্কৃতি ও ইতিহাসের এক সমন্বিত রূপ।
+                    <span class="en">Rajshahi District</span> উত্তরবঙ্গের আত্মা বহন করে চলেছে যুগের পর যুগ।
+                </p>
+            </div>
+        </section>
+    
+        <!-- ===============================
+          Contact Section
+        ================================ -->
+        <section class="content-section" id="contact">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">যোগাযোগ</span>
+                <h2 class="section-title">যোগাযোগ করুন</h2>
+                <p class="section-desc">Get in Touch</p>
+            </div>
+
+            <div class="contact-grid" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://facebook.com/sobujrahman440" target="_blank" rel="noopener noreferrer" class="contact-card facebook">
+                    <div class="contact-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Facebook</h3>
+                        <p>sobujrahman440</p>
+                        <span class="contact-action">ফলো করুন <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/8801724487415" target="_blank" rel="noopener noreferrer" class="contact-card whatsapp">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>WhatsApp</h3>
+                        <p>01724487415</p>
+                        <span class="contact-action">মেসেজ করুন <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="https://t.me/sobujrahman440" target="_blank" rel="noopener noreferrer" class="contact-card telegram">
+                    <div class="contact-icon">
+                        <i class="fab fa-telegram-plane"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Telegram</h3>
+                        <p>@sobujrahman440</p>
+                        <span class="contact-action">কানেক্ট করুন <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===============================
+      Footer
+    ================================ -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <i class="fas fa-landmark"></i>
+                <span>রাজশাহী জেলা</span>
+            </div>
+            <p class="footer-desc">উত্তরবঙ্গের আত্মা · রেশমের নগরী · আমের রাজধানী</p>
+            <div class="footer-social">
+                <a href="https://facebook.com/sobujrahman440" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/8801724487415" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://t.me/sobujrahman440" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+            <div class="footer-credit">
+                <p>তৈরি করেছেন <strong>SOBUJ RAHMAN</strong></p>
+                <p class="footer-year">© ২০২৬ রাজশাহী জেলা</p>
+            </div>
+        </div>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/interactions.js"></script>
+
+    <!-- ===============================
+      Floating WhatsApp Button
+    ================================ -->
+    <a href="https://wa.me/8801724487415" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">চ্যাট করুন</span>
+    </a>
+
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/8801724487415" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">ম্যাসেজ করুন</span>
+    </a>
+
+</body>
+</html>
